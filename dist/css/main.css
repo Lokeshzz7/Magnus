@@ -1,56 +1,46 @@
-body {
-    background-color:black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background-color:black;
   height: 100%;
   overflow-x: hidden;
 }
 
-.head {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   overflow-x: hidden;
-  position: absolute;
-  margin-bottom: 40px;
 }
-
 .video{
-  height: 100vh;
-  width:100%;
-  position: absolute;
-  z-index: -1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items:center;
 }
+.video video{
+  width: fit-content;
+  height: 90vh;
 
-canvas {
-  overflow-clip-margin: content-box;
-  overflow: clip;
 }
-
-#particle-js{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url();
-  z-index: 4;
-}
-
 
 
 .nav-bar {
-  margin-top: -20px;
-}
-
-.nav-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  left: 50%;
-  right: 50%;
+  position: absolute;
+  right: 0;
 }
-.nav-list li {
+.nav-bar li {
   list-style: none;
 }
-.nav-list li a {
+.nav-bar li a {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -58,7 +48,6 @@ canvas {
   color: #2B2730;
   padding: 5px;
 }
-
 .logo {
   height: 100px;
 }
@@ -138,17 +127,33 @@ z-index: 1;
   height:fit-content;
   overflow-x: hidden;
  }
+ .about-section{
+  
+ }
+ .about-cit,.about-magnus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 
+}
  .about-content{
-  height: 100%;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: aliceblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: inherit;
   font-weight: 400;
   text-align: center;
  }
-.about-content span{
+ .about-magnus{
+  flex-direction: row-reverse;
+}
+
+span{
   color: azure;
 }
 
@@ -160,25 +165,21 @@ z-index: 1;
   font-size: large;
   text-align: justify;
 }
- .about-section{
-  display: block;
-  position:relative;
- }
-.about-cit,.about-magnus{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.about-magnus{
-  flex-direction: row-reverse;
-}
 .about-cit img,.about-magnus img{
   margin: 10px;
   padding: 10px;
   height: 290px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+
 }
-.events-heading{
+.about-cit img:hover,.about-magnus img:hover{
+  opacity: 0.5;
+}
+
+.events-heading,.contact-sub{
   display: block;
   color: rgb(227, 153, 38);
   font-family: "Poppins", sans-serif;
@@ -187,6 +188,7 @@ z-index: 1;
   font-size: 32px;
   height: 100%;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .event-section-grid{
@@ -195,9 +197,7 @@ z-index: 1;
   grid-template-columns: auto auto auto auto auto;
   row-gap: 80px;
   column-gap: 20px;
- /*grid:100px/auto auto auto;
- grid-gap: 200px;
- */
+  height: 100vh;
 }
 
 
@@ -252,12 +252,18 @@ z-index: 1;
   height: 99%;
   background-color: #151515;
   border-radius: 5px;
-  color: white;
+  color: azure;
+  opacity: 0.98;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.back-content strong{
+    opacity: 0.5;
 }
 
 .card:hover .content {
@@ -344,4 +350,127 @@ z-index: 1;
   100% {
     transform: translateY(0px);
   }
+}
+
+.workshop{
+  display: flex;
+  flex-direction: column;
+}
+.workshop-head{
+  margin: 0;
+}
+.workshop-head .events-heading{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.workshop-card{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.location{
+  height: 100vh;
+}
+.location-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+iframe{
+  width:642px !important ;
+  height:390px!important;
+  border-radius: 15px;
+}
+
+.locam{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.locamm h3,.locmi{
+  color: #fff;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.locamm h3{
+  font-size:xx-large;
+}
+
+#location-head{
+  margin-top: 250px;
+}
+.icons{
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+  }
+.icons img{
+  width: 25px;
+}
+.example{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 30px auto;
+}
+.example h1,.example p{
+  display: block;
+  color: rgb(227, 153, 38);
+  font-family: "Poppins", sans-serif;
+  font-style: inherit;
+  font-weight: 600;
+  font-size: 32px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.flip{
+  display: flex;
+  flex-direction: column;
+}
+
+.example{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact{
+  height: 500px;
+  color: #fff;
+  display: flex;
+  flex-basis: 1fr 1fr 1fr;
+  align-items: center;
+
+}
+.heads{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.contact-sub{
+  display: block;
+  color: rgb(227, 153, 38);
+  font-family: "Poppins", sans-serif;
+  font-style: inherit;
+  font-weight: 600;
+  font-size: 22px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 20px;
 }
