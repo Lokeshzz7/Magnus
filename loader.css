@@ -6,6 +6,7 @@
   background-color:black;
   position: absolute;
   width: 100vw;
+  border: 0;
 }
 .loader{
   width: fit-content;
@@ -13,11 +14,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
 }
 
 .loader img{
   width: 50%;
   height: 50%;
+  border: 0;
 }
 
 
