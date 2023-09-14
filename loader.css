@@ -6,8 +6,22 @@
   background-color:black;
   position: absolute;
   width: 100vw;
-  height: 100vh;
 }
+.loader{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img{
+  width: 50%;
+  height: 50%;
+}
+
+
+/*
 .loader {
     width: 48px;
     height: 48px;
@@ -60,3 +74,4 @@
       transform: rotate(-360deg);
     }
   }
+  */
