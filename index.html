@@ -1,896 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0 ,user-scalable=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 ,user-scalable=no">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./flipdown-master/dist/flipdown.css" />
-    <link rel="icon" href="dist/img/magnuslogo.png">
-    <title>Magnus</title>
-    <link rel="stylesheet" href="loader.css">
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Titillium+Web:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    href="https://fonts.googleapis.com/css2?family=Poppins&family=Titillium+Web:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Magnus</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./dist/img/magnuslogo.png" width="100px" class="logo"></a>
+    <div>
+        <ul id="navbar">
+        <li><a class="" href="index.html" style="text-decoration: none;"><button class="ui-btn"><span>Home</span></button></a></li>  
+        <li><a href="#about" style="text-decoration: none;"><button class="ui-btn"><span>About</span></button></a></li>
+        <li><a  href="#events" style="text-decoration: none;"><button class="ui-btn"><span>Events</span></button></a></li>
+        <li><a href="#workshop" style="text-decoration: none;"><button class="ui-btn"><span>Workshops</span></button></a></li>
+        <li><a href="#contact" style="text-decoration: none;"><button class="ui-btn"><span>Contact</span></button></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-xmark fa-beat-fade" style="color: rgb(255, 153, 38);"></i></a>
+    </ul>
+    </div>
+    <div id="mobile">
+      <img src="./dist/img/hamburger.png" width="30px"  id="bar">
+    </div>
+    </section>
+    <div class="video">
+      <img src="dist/img/magnusgif.gif" alt="" class="video">
+    </div>
+
+    <section class="about-section" id="about">
+      <h2 class="events-heading">About</h2>
+    <div data-aos = "fade-down-right" >
+      <div class="about-cit">
+        <div class="about-content">
+          <h2><span class="white">About</span> Chennai Institue Of Technology</h2>
+          <p>
+            Chennai Institute of Technology stands out for its commitment to
+            practical education and cultivating an entrepreneurial mindset
+            among students. The institute's incubation center empowers
+            aspiring entrepreneurs with resources to launch and grow startups.
+            Through strategic partnerships with leading companies, students
+            gain real-world experiences and job opportunities, setting them up
+            for career success.
+          </p>
+        </div>
+        <div class="img"><img src="./dist/img/Cit.jpg" alt="" /></div>
+      </div>
+    </div>
+      <div data-aos = "fade-down-left">
+      <div class="about-magnus" id="magnus">
+        <div class="about-content">
+          <h2><span class="white">About</span> Magnus</h2>
+          <p>
+            Magnus, the technical symposium of the department of Artificial
+            Intelligence and Machine Learning at Chennai Institute of
+            Technology is an event that aims to celebrate the technological
+            marvels achieved in the field of Machine Learning and Artificial
+            Intelligence. Join us for an exhilarating experience diving into
+            cutting-edge technology and innovation in the field of AI and ML.
+            Expect thought-provoking technical talks by renowned experts,
+            interactive workshops, and hackathons that will challenge your
+            skills and broaden your horizons.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./dist/img/about-magnus.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    </section>
+    <div class="example">
+      <div class="flip">
+        <p>Experience <span class="white">Greatness</span> in ..</p>
+      </div>
+      <div id="flipdown" class="flipdown"></div>
+    </div>
+    <div class="events" id="events">
+      <div>
+        <h2 class="events-heading">Events</h2>
+      </div>
+
+      <div class="event-section-grid">
+        <div data-aos = "zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/paperpresent.jpg);"> 
+                <img src="events/img/event1.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup"></span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  It brings the prodigious opportunity for all the undergraduate and postgraduate students to  demonstrate and witness the knowledge on research work in front of fellow students & industrialist in the form of paper presentation under disparate sectors.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title">-><a href="events/paperppt.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-2 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content" style="background: url(events/card/potterbrains.avif);">
+                <img src="events/img/event2.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Codeathon</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Embrace The Coding Madness: Join The Ultimate Battle of Brains at Codathon - where innovation, collaboration, and competition merge in one epic coding event. Unleash your inner genius and make your mark in the world of programming. Are you ready to code your way to victory?
+                </div>
+                <div class="desc">
+
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/Codeathon.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-3 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/infotsav.png);">
+                <img src="events/img/event3.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Tech Quiz</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Prepare to embark on a journey into the fascinating world of technology and innovation with the TechnoGenius Challenge, an extraordinary tech quiz event designed to test your knowledge, inspire your curiosity, and celebrate the ever-evolving tech landscape.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/TechQuiz.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-4 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"  style="background-image: url(events/card/figmas.png);">
+                <img src="events/img/event4.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Designing UI-UX</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Are you passionate about creating seamless user experiences and eye-catching interfaces? Join us for DesignXperience, the ultimate event for UI/UX designers and enthusiasts. This immersive workshop and networking event will take your design skills to the next level.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/FigmaSpark.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- row-2-->
+
+        <!-- card-1 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content" style="background-image: url(events/card/projectpresent.png);">
+                <img src="events/img/event5.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup"></span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Inspire, Innovate, and Present your Brilliance: Dive into the World of Ideas and Witness the Future Unfold at Project Presentation.Get ready for a transformative experience that celebrates creativity and pushes the boundaries of innovation.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/projectppt.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-2 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/portmanecourse-hero-sq.jpg);">
+                <img src="events/img/event6.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Webcode</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Welcome to the Web Wizards 2023, where innovation meets creativity in the digital realm! Whether you're an experienced web developer or just starting your journey,Get ready to embark on a thrilling journey into the world of web development!
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/WebWizards.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-3 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/bgmi.jpg);">
+                <img src="events/img/event7.png" alt="" style=" width: 350px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Lets Go</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  ONLINE EVENT: Dive Into The BattleGrounds Prepare yourselves for the most adrenaline-pumping, heart-pounding Battle Royale tournament of the decade! "Battle Royale Showdown" is here, and it's set to be an epic clash of champions like no other.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/Bgmi.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-4 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/webtriviaimg.jpg);">
+                <img src="events/img/event8.png" alt="" style=" width: 300px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Anime Quiz</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  In our Anime Quiz Extravaganza, prepare to go on an adventurous adventure through the fascinating realms of anime! We're inviting all anime specialists, ardent fans, and curious souls to join us for an incredible evening of brain-teasing questions and exhilarating showdowns.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/AnimeQuiz.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- row-3-->
+
+        <!-- card-1 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/filmfusion.png);">
+                <img src="events/img/event9.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Movie Guessing</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Step into the world of cinematic creativity like never before with "Film Fusion," the ultimate movie guessing event that will put your film knowledge to the test and challenge your deductive skills.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/FilmFusion.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- card-2 -->
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/photography\ 1.png);">
+                <img src="events/img/event10.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+                <p class="title"><span class="pickup">Photography</span></p>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  ONLINE EVENT: Welcome to the "Freeze Your Time Photography Challenge," an event designed to liberate your creativity through the lens of a camera. Join us for a day of artistic exploration, where you can express yourself and capture the world as you see it.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/FreeYoutime.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     
-  </head>
-  <body>
-    <div class="load-container" id="load">
-      <div class="loader">
-       
+
+    <div class="workshop" id="workshop">
+      <div class="workshop-head">
+        <h2 class="events-heading">Workshop</h2>
+      </div>
+      
+      <div class="workshop-card">
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">g
+              <div class="back-content"   style="background-image: url(events/card/opensourceimg.avif);">
+                <img src="events/img/workshop1.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Embrace Collaboration, Join the Open Source Workshop and Explore learn from students, and contribute to meaningful projects that shape the future of technology. Let's code, collaborate, and make a difference together!"
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/workshop1.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div data-aos="zoom-in">
+        <div class="card">
+          <div class="content">
+            <div class="back">
+              <div class="back-content"   style="background-image: url(events/card/artificialimg.avif);">
+                <img src="events/img/workshop2.png" alt="" style=" width: 200px; height: fit-content; background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <strong></strong>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front-content">
+                <div class="desc">
+                  Join our " Artificial Intelligence" workshop to explore the world of Artificial Intelligence (AI). Learn about AI technologies, applications, and its boundless potential. Attendees will receive a participation certificate, demonstrating their dedication to AI understanding and application.
+                </div>
+                <div class="description">
+                  <p class="title">
+                  </p>
+                  <p class="title"> -><a href="events/workshop2.html"  style="color: azure;" style="text-decoration: none;" style="opacity: 0.5;">More Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
       </div>
     </div>
-    <div class="nloader">
-      <section id="header">
-        <a href="#"
-          ><img src="./dist/img/magnuslogo.png" width="100px" class="logo"
-        /></a>
-        <div>
-          <ul id="navbar">
-            <li>
-              <a class="" href="index.html" style="text-decoration: none"
-                ><button class="ui-btn"><span>Home</span></button></a
-              >
-            </li>
-            <li>
-              <a href="#about" style="text-decoration: none"
-                ><button class="ui-btn"><span>About</span></button></a
-              >
-            </li>
-            <li>
-              <a href="#events" style="text-decoration: none"
-                ><button class="ui-btn"><span>Events</span></button></a
-              >
-            </li>
-            <li>
-              <a href="#workshop" style="text-decoration: none"
-                ><button class="ui-btn"><span>Workshops</span></button></a
-              >
-            </li>
-            <li>
-              <a href="#contact" style="text-decoration: none"
-                ><button class="ui-btn"><span>Contact</span></button></a
-              >
-            </li>
-            <a href="#" id="close"
-              ><i
-                class="fa-solid fa-xmark fa-beat-fade"
-                style="color: rgb(255, 153, 38)"
-              ></i
-            ></a>
-          </ul>
-        </div>
-        <div id="mobile">
-          <img src="./dist/img/hamburger.png" width="30px" id="bar" />
-        </div>
-      </section>
-      <div class="video">
-        <img src="dist/img/magnusgif.gif" alt="" class="video" />
+    <div class="location" id="location">
+      <div class="location-head">
+        <h2 class="events-heading" id="location-head">Location</h2>
       </div>
-
-      <section class="about-section" id="about">
-        <h2 class="events-heading">About</h2>
-        <div class="about-cit">
-          <div class="about-content">
-            <h2>
-              <span class="white">About</span> Chennai Institute of Technology
-            </h2>
-            <p>
-              Chennai Institute of Technology stands out for its commitment to
-              practical education and cultivating an entrepreneurial mindset
-              among students. The institute's incubation center empowers
-              aspiring entrepreneurs with resources to launch and grow startups.
-              Through strategic partnerships with leading companies, students
-              gain real-world experiences and job opportunities, setting them up
-              for career success.
-            </p>
-          </div>
-          <div class="img"><img src="./dist/img/Cit.jpg" alt="" /></div>
+      <div class="location-main">
+        <div data-aos="zoom-out-left">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.003673373191!2d80.04049737577161!3d12.971616514876485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1693296711787!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-
-        <div class="about-magnus" id="magnus">
-          <div class="about-content">
-            <h2><span class="white">About</span> Magnus</h2>
-            <p>
-              Magnus, the technical symposium of the department of CSE (Artificial
-              Intelligence and Machine Learning) at Chennai Institute of
-              Technology is an event that aims to celebrate the technological
-              marvels achieved in the field of Machine Learning and Artificial
-              Intelligence. Join us for an exhilarating experience diving into
-              cutting-edge technology and innovation in the field of AI and ML.
-              Expect thought-provoking technical talks by renowned experts,
-              interactive workshops, and hackathons that will challenge your
-              skills and broaden your horizons.
-            </p>
-          </div>
-          <div class="img">
-            <img src="./dist/img/about-magnus.jpg" alt="" />
+        </div>
+        <div data-aos="zoom-out-right">
+        <div class="locamm">
+          <h3>Chennai Institute Of Technology</h3>
+          <div class="locmi">
+            <br />
+            SH-113, Sarathy Nagar, <br />Pudupedu Kundrathur,
+            <br />Sriperumbudur Main Road, <br />Chennai, Tamil Nadu <br />PIN
+            : 600069
           </div>
         </div>
-      </section>
-      <div class="example">
-        <div class="flip">
-          <p>Experience <span class="white">Greatness</span> in ..</p>
-        </div>
-        <div id="flipdown" class="flipdown"></div>
-      </div>
-      <div class="events" id="events">
-        <div>
-          <h2 class="events-heading">Events</h2>
-        </div>
-        <div class="event-section-grid">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/paperpresent.jpg)"
-                >
-                  <img
-                    src="events/img/event1.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup"></span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    It brings the prodigious opportunity for all the
-                    undergraduate and postgraduate students to demonstrate and
-                    witness the knowledge on research work in front of fellow
-                    students & industrialist in the form of paper presentation
-                    under disparate sectors.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/paperppt.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-2 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background: url(events/card/potterbrains.avif)"
-                >
-                  <img
-                    src="events/img/event2.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Codeathon</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Embrace The Coding Madness: Join The Ultimate Battle of
-                    Brains at Codathon - where innovation, collaboration, and
-                    competition merge in one epic coding event. Unleash your
-                    inner genius and make your mark in the world of programming.
-                    Are you ready to code your way to victory?
-                  </div>
-                  <div class="desc"></div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/Codeathon.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-3 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/infotsav.png)"
-                >
-                  <img
-                    src="events/img/event3.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Tech Quiz</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Prepare to embark on a journey into the fascinating world of
-                    technology and innovation with the TechnoGenius Challenge,
-                    an extraordinary tech quiz event designed to test your
-                    knowledge, inspire your curiosity, and celebrate the
-                    ever-evolving tech landscape.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/TechQuiz.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-4 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/figmas.png)"
-                >
-                  <img
-                    src="events/img/event4.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title">
-                    <span class="pickup">Designing UI-UX</span>
-                  </p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Are you passionate about creating seamless user experiences
-                    and eye-catching interfaces? Join us for DesignXperience,
-                    the ultimate event for UI/UX designers and enthusiasts. This
-                    immersive workshop and networking event will take your
-                    design skills to the next level.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/FigmaSpark.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- row-2-->
-
-          <!-- card-1 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/projectpresent.png)"
-                >
-                  <img
-                    src="events/img/event5.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup"></span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Inspire, Innovate, and Present your Brilliance: Dive into
-                    the World of Ideas and Witness the Future Unfold at Project
-                    Presentation.Get ready for a transformative experience that
-                    celebrates creativity and pushes the boundaries of
-                    innovation.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/projectppt.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-2 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="
-                    background-image: url(events/card/portmanecourse-hero-sq.jpg);
-                  "
-                >
-                  <img
-                    src="events/img/event6.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Webcode</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Welcome to the Web Wizards 2023, where innovation meets
-                    creativity in the digital realm! Whether you're an
-                    experienced web developer or just starting your journey,Get
-                    ready to embark on a thrilling journey into the world of web
-                    development!
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/WebWizards.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-3 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/bgmi.jpg)"
-                >
-                  <img
-                    src="events/img/event7.png"
-                    alt=""
-                    style="
-                      width: 350px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Lets Go</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Dive Into The BattleGrounds, Prepare yourselves
-                    for the most adrenaline-pumping, heart-pounding Battle
-                    Royale tournament of the decade! "Battle Royale Showdown" is
-                    here, and it's set to be an epic clash of champions like no
-                    other.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/Bgmi.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-4 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/webtriviaimg.jpg)"
-                >
-                  <img
-                    src="events/img/event8.png"
-                    alt=""
-                    style="
-                      width: 300px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Anime Quiz</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    In our Anime Quiz Extravaganza, prepare to go on an
-                    adventurous adventure through the fascinating realms of
-                    anime! We're inviting all anime specialists, ardent fans,
-                    and curious souls to join us for an incredible evening of
-                    brain-teasing questions and exhilarating showdowns.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/AnimeQuiz.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- row-3-->
-
-          <!-- card-1 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/filmfusion.png)"
-                >
-                  <img
-                    src="events/img/event9.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title">
-                    <span class="pickup">Movie Guessing</span>
-                  </p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Step into the world of cinematic creativity like never
-                    before with "Film Fusion," the ultimate movie guessing event
-                    that will put your film knowledge to the test and challenge
-                    your deductive skills.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/FilmFusion.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- card-2 -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/photography\ 1.png)"
-                >
-                  <img
-                    src="events/img/event10.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                  <p class="title"><span class="pickup">Photography</span></p>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    ONLINE EVENT: Welcome to the "Freeze Your Time Photography
-                    Challenge," an event designed to liberate your creativity
-                    through the lens of a camera. Join us for a day of artistic
-                    exploration, where you can express yourself and capture the
-                    world as you see it.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/FreeYoutime.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-      <div class="workshop" id="workshop">
-        <div class="workshop-head">
-          <h2 class="events-heading">Workshops</h2>
-        </div>
-        <div class="workshop-card">
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                g
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/opensourceimg.avif)"
-                >
-                  <img
-                    src="events/img/workshop1.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Embrace Collaboration, Join the Open Source Workshop and
-                    Explore learn from students, and contribute to meaningful
-                    projects that shape the future of technology. Let's code,
-                    collaborate, and make a difference together!"
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/workshop1.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div
-                  class="back-content"
-                  style="background-image: url(events/card/artificialimg.avif)"
-                >
-                  <img
-                    src="events/img/workshop2.png"
-                    alt=""
-                    style="
-                      width: 200px;
-                      height: fit-content;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    "
-                  />
-                  <strong></strong>
-                </div>
-              </div>
-              <div class="front">
-                <div class="front-content">
-                  <div class="desc">
-                    Join our " Artificial Intelligence" workshop to explore the
-                    world of Artificial Intelligence (AI). Learn about AI
-                    technologies, applications, and its boundless potential.
-                    Attendees will receive a participation certificate,
-                    demonstrating their dedication to AI understanding and
-                    application.
-                  </div>
-                  <div class="description">
-                    <p class="title"></p>
-                    <p class="title">
-                      -><a
-                        href="events/workshop2.html"
-                        style="color: azure"
-                        style="text-decoration: none"
-                        style="opacity: 0.5"
-                        >More Details</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="location" id="location">
-        <div class="location-head">
-          <h2 class="events-heading" id="location-head">Location</h2>
-        </div>
-        <div class="location-main">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.003673373191!2d80.04049737577161!3d12.971616514876485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1693296711787!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="locamm">
-            <h3>Chennai Institute Of Technology</h3>
-            <div class="locmi">
-              <br />
-              SH-113, Sarathy Nagar, <br /> Sriperumbudur Main Road,
-              <br />Kundrathur,<br />Chennai, Tamil Nadu <br />PIN
-              : 600069
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 class="events-heading">Contact Us</h1>
-
-      <div
-        class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 huh"
-        id="contact"
-      >
-        <div class="mt-10">
-          <h2 class="contact-headline">Staff Coordinator</h2>
-          <ul class="contact-number text-center">
-            <li class="flex items-center justify-center gap-5 py-8">
-              <p>Dr.P.Karthikeyan</p>
-              <a
-                href="tel:+919677781595"
-                class="text-[var(--theme)] underline decoration-from-font underline-offset-4"
-                >+91 9677781595</a
-              >
-            </li>
-            <li style="list-style: none">
-              <p>Dr.R.Gowri</p>
-            </li>
-          </ul>
-        </div>
-        <div class="mt-10">
-          <h2 class="contact-headline">Event Coordinators</h2>
-          <ul class="contact-number text-center">
-            <li class="flex items-center justify-center gap-5 py-4 pt-8">
-              <p>Srivari V</p>
-              <a
-                href="tel:+917397362260"
-                class="text-[var(--theme)] underline decoration-from-font underline-offset-4"
-                >+91 7397362260</a
-              >
-            </li>
-            <li class="flex items-center justify-center gap-5 py-4">
-              <p>Thrisha</p>
-              <a
-                href="tel:+918072712153"
-                class="text-[var(--theme)] underline decoration-from-font underline-offset-4"
-                >+91 8072712153</a
-              >
-            </li>
-            <li class="flex items-center justify-center gap-5 py-4">
-              <p>Jon Jenson S</p>
-              <a
-                href="tel:+919495123363"
-                class="text-[var(--theme)] underline decoration-from-font underline-offset-4"
-                >+91 9495123363</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="mt-10">
-          <h2 class="contact-headline">Help Desk</h2>
-          <ul class="contact-number text-center">
-            <li class="flex items-center justify-center gap-5 py-8">
-              <p>Dheepak Arjun</p>
-              <a
-                href="tel:+917358531626"
-                class="text-[var(--theme)] underline decoration-from-font underline-offset-4"
-                >+91 7358531626</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <br />
-      <hr />
-      <div class="footer">
-        <div class="footerli">
-          <div class="footerin">
-            <div class="footerfor">
-              <h2>Events</h2>
-              <a href="#events">Technical</a>
-              <a href="#events">Non-Technical</a>
-              <a href="#workshop">Workshop</a>
-            </div>
-          </div>
-          <div class="footerin">
-            <div class="footerfor">
-              <h2>About</h2>
-              <a href="#magnus">Symposium</a>
-              <a href="#magnus">Department</a>
-              <a href="#about">College</a>
-            </div>
-          </div>
-          <div class="footerin">
-            <div class="footerfor">
-              <h2>Social Media</h2>
-              <a href="mailto:magnus@citchennai.net" target="_blank">Mail</a>
-              <a href="https://www.instagram.com/magnus.cit/" target="_blank"
-                >Instagram</a
-              >
-              <a
-                href="https://www.linkedin.com/in/magnus-cit-7158a2287/"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </div>
-          </div>
-          <div class="footerin">
-            <div class="footerfor">
-              <h2>Other Links</h2>
-              <a href="terms/terms.html">Terms and Services</a>
-              <a href="terms/privacy.html">Privacy Policy</a>
-              <a href="terms/refund.html">Refund Policy</a>
-              <a href="terms/pricing.html">Pricing Policy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="divlast">
-          <div class="juhu">
-            All Rights Reserved | Copyright ©2023 |
-            <a
-              class="haha"
-              href="mailto:bhuvaneshwaran813@gmail.com"
-              target="_blank"
-              >&nbsp;Website By &nbsp;
-              <div class="glow">Bhuvanesh &amp; Lokesh</div>
-            </a>
-          </div>
-        </div>
-      </footer>
-      <hr />
     </div>
-  </body>
-  <script src="magnus.js"></script>
-  <script src="./flipdown-master/dist/flipdown.js"></script>
-  <script src="./flipdown-master/example/js/main.js"></script>
-  <script
-    src="https://kit.fontawesome.com/625598e91c.js"
-    crossorigin="anonymous"
-  ></script>
+    <h1 class="events-heading">Contact Us</h1>
+
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 huh" id="contact">
+      <div class="mt-10">
+        <h2 class="contact-headline">Staff Coordinator</h2>
+        <ul class="contact-number text-center">
+          <li class="flex items-center justify-center gap-5 py-8">
+            <p>P.Karthikeyan</p>
+            <a href="tel:+919677781595" class="text-[var(--theme)] underline decoration-from-font underline-offset-4">+91 9677781595</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-10">
+            <h2 class="contact-headline">Event Coordinators</h2>
+            <ul class="contact-number text-center">
+              <li class="flex items-center justify-center gap-5 py-4 pt-8">
+                <p>Srivari V</p>
+                <a href="tel:+917397362260" class="text-[var(--theme)] underline decoration-from-font underline-offset-4">+91 7397362260</a>
+              </li>
+              <li class="flex items-center justify-center gap-5 py-4">
+                <p>Thrisha </p>
+                <a href="tel:+918072712153" class="text-[var(--theme)] underline decoration-from-font underline-offset-4">+91 8072712153</a>
+              </li>
+              <li class="flex items-center justify-center gap-5 py-4">
+                <p>Jon Jenson S</p>
+                <a href="tel:+919495123363" class="text-[var(--theme)] underline decoration-from-font underline-offset-4">+91 9495123363</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10">
+            <h2 class="contact-headline">Help Desk</h2>
+            <ul class="contact-number text-center">
+              <li class="flex items-center justify-center gap-5 py-8 ">
+                <p>Dheepak Arjun</p>
+                <a href="tel:+917358531626" class="text-[var(--theme)] underline decoration-from-font underline-offset-4">+91 7358531626</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    
+  
+  <br>
+  <hr>
+  <div class="footer">
+    <div class="footerli">
+      <div class="footerin">
+        <div class="footerfor">
+          <h2>Events</h2>
+          <a href="#events">Technical</a>
+          <a href="#events">Non-Technical</a>
+          <a href="#workshop">Workshop</a>
+        </div>
+      </div>
+      <div class="footerin">
+        <div class="footerfor">
+          <h2>About</h2>
+          <a href="#magnus">Symposium</a>
+          <a href="#magnus">Department</a>
+          <a href="#about">College</a>
+        </div>
+      </div>
+      <div class="footerin">
+        <div class="footerfor">
+          <h2>Social Media</h2>
+          <a href="mailto:magnus@citchennai.net" target="_blank">Mail</a>
+          <a href="https://www.instagram.com/magnus.cit/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/magnus-cit-7158a2287/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footerin">
+        <div class="footerfor">
+          <h2>Other Links</h2>
+          <a href="terms.html">Terms and Services</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="refund.html">Refund Policy</a>
+          <a href="pricing.html">Pricing Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    
+    <div class="divlast">
+      <div class="juhu">All Rights Reserved | Copyright ©2023 |
+        <a class="haha" href="mailto:bhuvaneshwaran813@gmail.com" target="_blank">&nbsp;Website By &nbsp;
+          <div class="glow">Bhuvanesh &amp; Lokesh
+        </div>
+        </a>
+    </div>
+  </div>
+  </footer>
+  <hr>
+
+</body>
+<script src="magnus.js"></script>
+<script src="./flipdown-master/dist/flipdown.js"></script>
+    <script src="./flipdown-master/example/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/625598e91c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration:1000,
+    
+    });
+  </script>
+
 </html>
