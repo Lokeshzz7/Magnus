@@ -6,8 +6,8 @@
   background-color:black;
   position: absolute;
   width: 100vw;
-  border: 0;
 }
+/*
 .loader{
   width: fit-content;
   height: fit-content;
@@ -22,9 +22,9 @@
   height: 50%;
   border: 0;
 }
+*/
 
 
-/*
 .loader {
     width: 48px;
     height: 48px;
@@ -77,4 +77,4 @@
       transform: rotate(-360deg);
     }
   }
-  */
+  
