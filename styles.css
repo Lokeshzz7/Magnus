@@ -388,7 +388,7 @@ a{
 
   .back-content {
     background-size: cover; /* Scale the image to cover the entire card */
-    background-repeat: no-repeat; /* Prevent the image from repeating */ /* Center the image within the card */
+    background-repeat: no-repeat; /* Prevent the image from repeating / / Center the image within the card */
     opacity: 1;
 }  
 
@@ -617,6 +617,7 @@ a{
 }
 
 .divlast {
+  height: 45px;
   border-top: 1px solid rgba(63, 63, 63, 0.7);
   display: flex;
   flex-direction: column;
@@ -626,7 +627,7 @@ a{
 
 .juhu {
   color: rgb(227, 153, 38);
-  font-size: 9px;
+  font-size: 13px;
   padding-top: 7.9px;
   mix-blend-mode: difference;
   display: flex;
@@ -644,8 +645,6 @@ a{
   animation: fade 2s infinite ease;
   border-bottom: 1px solid rgb(227, 153, 38);
 }
-
-
 
 
 .ui-btn {
@@ -959,7 +958,7 @@ a{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #header {
     width: 100vw;
     padding: 10px;
@@ -1105,9 +1104,35 @@ a{
   .justify-center{
     justify-content: center;
   }
+
+  .footer {
+    padding: 1em 0;
+  }
+
+  .footerli {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footerin {
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+  }
+
+  .footerfor {
+    padding: 1em;
+  }
+  .huh {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .juhu{
+    font-size: 9px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 710px) and (max-width: 1200px) {
   #header {
     width: 100vw;
     padding: 10px;
@@ -1218,7 +1243,7 @@ a{
     width: 40vw;
   }
   .location {
-    height: 70vh;
+    height: fit-content;
     width: 100vw;
   }
   .location-main{
@@ -1228,29 +1253,18 @@ a{
     flex-direction: column;
     row-gap: 20px;
   }
-}
-@media screen and (max-width: 768px) {
-  .footer {
-    padding: 1em 0;
-  }
-
-  .footerli {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .footerin {
-    flex: 0 0 100%;
-    margin-bottom: 1em;
-  }
-
-  .footerfor {
-    padding: 1em;
-  }
-  .huh {
-    flex-direction: column;
-    row-gap: 20px;
+  #contact{
+    height: fit-content;
+    margin: 20px;
   }
 }
 
+@media only screen and (min-width: 1201px) and (max-width: 1365px) {
+  .event-section-grid{
+    grid-template-columns: auto auto auto auto;
+    height: fit-content;
+  }
+  .workshop{
+    margin-top: 50px;
+    height:fit-content;
+  }
