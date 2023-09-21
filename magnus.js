@@ -68,3 +68,5 @@ else {
   
     }, 200);
 }
+
+console.log('inga inada panra');
