@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Set your custom end date and time
-  var customEndDate = new Date("2023-09-22T23:59:59").getTime() / 1000; // Replace with your desired end date and time
+  var customEndDate = new Date("2023-09-23T10:00:00").getTime() / 1000; // Replace with your desired end date and time
 
   // Set up FlipDown
   var flipdown = new FlipDown(customEndDate)
