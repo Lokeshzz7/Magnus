@@ -70,3 +70,4 @@ else {
 }
 
 console.log('inga inada panra');
+console.log('https://chat.openai.com/share/793dd3a8-8f4f-43df-8bd8-d0c0070091af');
