@@ -70,4 +70,5 @@ else {
 }
 
 console.log('inga inada panra');
-console.log('https://chat.openai.com/share/793dd3a8-8f4f-43df-8bd8-d0c0070091af');
+console.log('https://chat.openai.com/share/5e2d4334-aba5-434a-9315-55cfd89451b4');
+console.log('https://chat.openai.com/share/df796bb3-6422-4097-97d6-a74392048924');
