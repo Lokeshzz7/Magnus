@@ -70,4 +70,5 @@ else {
 }
 
 console.log('inga inada panra');
-console.log('https://chat.openai.com/share/98baf58c-bba7-4541-b3c6-2f26712540e5');
+console.log('https://chat.openai.com/share/09884503-ffb2-4321-9f09-f17662ed1f84');
+console.log('https://github.com/gdeeeeyy/cn-lab')
